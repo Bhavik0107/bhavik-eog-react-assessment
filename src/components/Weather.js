@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { actions } from './reducer';
-import { Provider, createClient, useQuery } from 'urql';
-import { useGeolocation } from 'react-use';
-import LinearProgress from '@material-ui/core/LinearProgress';
-import Chip from '../../components/Chip';
-import { IState } from '../../store';
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import * as actions from "../store/actions";
+import { Provider, createClient, useQuery } from "urql";
+import { useGeolocation } from "react-use";
+import LinearProgress from "@material-ui/core/LinearProgress";
+import Chip from "./Chip";
 
 const client = createClient({
   url: 'https://react.eogresources.com/graphql',
@@ -21,7 +20,7 @@ query($latLong: WeatherQuery!) {
 }
 `;
 
-const getWeather = (state: IState) => {
+const getWeather = state => {
   const { temperatureinFahrenheit, description, locationName } = state.weather;
   return {
     temperatureinFahrenheit,
@@ -57,12 +56,12 @@ const Weather = () => {
   const { fetching, data, error } = result;
   useEffect(() => {
     if (error) {
-      dispatch(actions.weatherApiErrorReceived({ error: error.message }));
+      dispatch({ type: actions.weatherApiErrorReceived, error: error.message });
       return;
     }
     if (!data) return;
     const { getWeatherForLocation } = data;
-    dispatch(actions.weatherDataRecevied(getWeatherForLocation));
+    dispatch({ type: actions.weatherDataReceived, getWeatherForLocation });
   }, [dispatch, data, error]);
 
   if (fetching) return <LinearProgress />;
