@@ -28,6 +28,7 @@ If any errors occur, you can try the following command to resolve the issues.
 
 ### npm audit fix
 
-Here is a screenshot of the final dashboard UI.
+### Here is a screenshot of the final dashboard UI.
 
-![2020-02-23 (1)](https://user-images.githubusercontent.com/61372004/75125840-26cf9980-5685-11ea-940d-65269ca17cac.png)
+![2020-02-23 (2)](https://user-images.githubusercontent.com/61372004/75126543-706db380-5688-11ea-9001-9611e5897f65.png)
+

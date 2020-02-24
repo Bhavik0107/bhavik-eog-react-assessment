@@ -122,6 +122,7 @@ const Dashboard = () => {
       type: actions.MEASUREMENTS_DATA_RECEIVED,
       getMultipleMeasurements
     });
+    // eslint-disable-next-line 
   }, [result2]);
 
   return (
