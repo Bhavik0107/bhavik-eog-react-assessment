@@ -9,8 +9,8 @@ import Chip from "@material-ui/core/Chip";
 
 const useStyles = makeStyles(theme => ({
   root: {
-    display: "flex",
-    flexWrap: "wrap"
+    flexWrap: "wrap",
+    textAlign: "center"
   },
   formControl: {
     margin: theme.spacing(1),
@@ -61,8 +61,9 @@ export default function Selection(props) {
 
   return (
     <div className={classes.root}>
+    <h1>Welcome!</h1>
       <FormControl className={classes.formControl}>
-        <InputLabel htmlFor="select-multiple-chip">Select</InputLabel>
+        <InputLabel htmlFor="select-multiple-chip">Select a metric</InputLabel>
         <Select
           multiple
           value={personName}

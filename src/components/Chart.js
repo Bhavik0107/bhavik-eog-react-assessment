@@ -18,7 +18,7 @@ export default function Chart(props) {
   const mergedObjects = [];
 
   if (!props.measurements || !props.measurements.length)
-    return <div>Select metric to load chart data</div>;
+    return <div><h2>Select a metric to load the data chart.</h2></div>;
 
   _.forEach(props.measurements[0].measurements, function(item, index) {
     const measurements = _.map(props.measurements, "measurements");
@@ -41,15 +41,9 @@ export default function Chart(props) {
 
   return (
     <LineChart
-      width={1024}
+      width={1100}
       height={500}
       data={finalData}
-      margin={{
-        top: 50,
-        right: 30,
-        left: 20,
-        bottom: 5
-      }}
     >
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="atValue" />

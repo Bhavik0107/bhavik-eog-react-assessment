@@ -11,7 +11,10 @@ import Chart from "./Chart";
 const useStyles = makeStyles({
   card: {
     margin: "1%",
-    textAlign: "center"
+    textAlign: "center",
+    border: "medium solid red",
+    boxShadow: "10px 10px 3px 3px rgba(255,0,0,0.3)",
+    display:"block"
   }
 });
 

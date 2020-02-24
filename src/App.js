@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import Wrapper from "./components/Wrapper";
 // import NowWhat from './components/NowWhat';
 import Dashboard from "./components/Dashboard";
+import { Container } from "@material-ui/core";
 
 const store = createStore();
 const theme = createMuiTheme({
@@ -20,7 +21,7 @@ const theme = createMuiTheme({
       main: "rgb(255,0,0)"
     },
     secondary: {
-      main: "rgb(197,208,222)"
+      main: "rgb(255,255,255)"
     },
     background: {
       main: "rgb(226,231,238)"
@@ -34,8 +35,10 @@ const App = props => (
     <Provider store={store}>
       <Wrapper>
         <Header />
-        <Dashboard />
-        <ToastContainer />
+        <Container>
+          <Dashboard />
+          <ToastContainer />
+        </Container>
       </Wrapper>
     </Provider>
   </MuiThemeProvider>
