@@ -1,0 +1,1 @@
+This folder contains all the necessary components to create the final page that will display the data chart and give the user an option to select various metrics to get different equipment data charts.
