@@ -4,7 +4,7 @@ This assessment was bespoke handcrafted for Bhavik.
 
 Read more about this assessment [here](https://react.eogresources.com)
 
-> Creates a CLI and a starter project all bootstrapped up with all the necesaary starter files.
+> The followind command creates a starter project all bootstrapped up with all the necesaary starter files.
 
 ### npx eog-react-visualization-cli create 
 
