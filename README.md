@@ -4,17 +4,17 @@ This assessment was bespoke handcrafted for Bhavik.
 
 Read more about this assessment [here](https://react.eogresources.com)
 
-> ### npx eog-react-visualization-cli create 
+> Creates a CLI and a starter project all bootstrapped up with all the necesaary starter files.
 
-Creates a CLI and a starter project all bootstrapped up with all the necesaary starter files.
+### npx eog-react-visualization-cli create 
 
-> ### cd yourname-react-visualization 
+> Insert your name to make a custom repository.
 
-Insert your name to make a custom repository.
+### cd yourname-react-visualization 
 
-> ### yarn install
+### yarn install
 
-> Install redux if not already install
+> Install redux if not already installed
 
 ### npm i redux
 
